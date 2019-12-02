@@ -1,0 +1,68 @@
+#results
+    width: 100%
+
+    & > div
+
+        & > div
+            grid-column: 1 / -1
+            display: grid
+            grid-auto-rows: 1fr
+
+            @media only screen and (min-width: $viewport-tablet)
+                grid-column: 2 / -2
+
+            @media only screen and (min-width: $viewport-desktop)
+                grid-column: 3 / -3
+
+
+.result
+    font-family: $font-primary
+    margin-top: 20px
+    padding: 10px
+    cursor: pointer
+    border-radius: 5px
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    overflow: hidden
+
+    &:hover
+        background-color: #F1F1F1
+
+    #title
+        color: #222222
+        font-size: 1.25rem
+        font-weight: 700
+        margin-bottom: 10px
+        pointer-events: none
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+
+    #url
+        color: #1168FF
+        font-size: 1rem
+        margin-bottom: 10px
+        pointer-events: none;
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+
+    #date
+        color: #989898
+        font-size: 1rem
+        margin-bottom: 10px
+        pointer-events: none
+        text-overflow: ellipsis
+
+    #content
+        color: #222222
+        font-size: 1rem
+        margin-bottom: 10px
+        pointer-events: none
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical

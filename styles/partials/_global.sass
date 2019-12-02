@@ -1,0 +1,32 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.grid
+    // 0 - 800
+    display: grid
+    grid-template-rows: auto 
+    grid-template-columns: repeat(6, 1fr)
+    grid-column-gap: 1rem
+    margin: 0rem 1.8rem
+
+    // 800 - 900
+    @media only screen and (min-width: $viewport-mobile)
+        margin: 0rem 3.5rem
+        grid-template-columns: repeat(8, 1fr)
+        grid-column-gap: 1rem
+
+    // 900 - 1440
+    @media only screen and (min-width: $viewport-tablet)
+        margin: 0rem 5.125rem
+        grid-template-columns: repeat(12, 1fr)
+
+    // 1440 - 1920
+    @media only screen and (min-width: $viewport-desktop)
+        margin: 0rem 6.5rem
+        grid-template-columns: repeat(12, 1fr)
+
+    @media only screen and (min-width: $viewport-largeDesktop)
+        margin: 0rem auto
+        width: 102.5rem

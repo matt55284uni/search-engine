@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Engine</title>
+        <link rel='stylesheet' href='/css/main.css'/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <section id="header">
+            <div class="grid">
+                <div>
+                    <h1>Search Engine</h1>
+                    <input id="search" type="text" placeholder="search for something here"/><br>
+                    <button id="searchButton">SEARCH</button>
+                </div>
+            </div>
+        </section>
+        <section id="results">
+            <div class="grid">
+                <div>
+                    <% results.forEach(item => { %>
+                        <div class="result">
+                            <h2 id="title"><%= item.title %></h2>
+                            <p id="url" data-url="<%= item.link %>"><%= item.link %></p>
+                            <p id="date"><%= item.pubDate %></p>
+                            <p id="content"><%= item.content %></p>
+                        </div>                        
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

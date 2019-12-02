@@ -1,0 +1,25 @@
+{
+  "name": "search_engine",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "javascript-lemmatizer": "^0.0.2",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "remove-punctuation": "^0.0.4",
+    "rss-parser": "^3.7.3",
+    "striptags": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/npm-run-all --parallel sass server",
+    "server": "node --experimental-modules ./bin/www.mjs",
+    "sass": "./node_modules/.bin/node-sass -w styles -o public/css"
+  },
+  "author": "",
+  "license": "ISC"
+}
