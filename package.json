@@ -8,7 +8,7 @@
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "javascript-lemmatizer": "^0.0.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.5",
     "remove-punctuation": "^0.0.4",
     "rss-parser": "^3.7.3",
